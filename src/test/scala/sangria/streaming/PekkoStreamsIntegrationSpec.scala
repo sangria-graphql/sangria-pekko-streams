@@ -21,7 +21,7 @@ class PekkoStreamsIntegrationSpec extends AnyWordSpec with Matchers {
   val impl: SubscriptionStream[pekkoStreams.PekkoSource] =
     new pekkoStreams.PekkoStreamsSubscriptionStream
 
-  "AkkaStreams Integration" should {
+  "Pekko Streams Integration" should {
     "support itself" in {
       impl.supported(pekkoStreams.pekkoSubscriptionStream) should be(true)
     }
