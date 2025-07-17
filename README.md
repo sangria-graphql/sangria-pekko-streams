@@ -8,6 +8,10 @@ SBT Configuration:
 libraryDependencies += "org.sangria-graphql" %% "sangria-pekko-streams" % "<latest_version>"
 ```
 
+### Releases
+
+Details about the release process can be found [here](HOW-TO-RELEASE.md).
+
 ## License
 
 **sangria-pekko-streams** is licensed under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
