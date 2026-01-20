@@ -4,6 +4,12 @@ organization := "org.sangria-graphql"
 description := "Sangria pekko-streams integration"
 homepage := Some(url("https://sangria-graphql.github.io/"))
 organizationHomepage := Some(url("https://github.com/sangria-graphql"))
+startYear := Some(2025)
+
+developers :=
+  Developer("stkeky", "Stefan Ristanović", "", url("https://github.com/stkeky")) ::
+    Developer("yanns", "Yann Simon", "", url("https://github.com/yanns")) ::
+    Nil
 
 licenses := Seq(
   "Apache License, ASL Version 2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0")
@@ -42,6 +48,22 @@ scmInfo := Some(
     connection = "scm:git:git@github.com:sangria-graphql/sangria-pekko-streams.git"
   ))
 
+lazy val projectInfo = Seq(
+  organization := "org.sangria-graphql",
+  homepage := Some(url("https://sangria-graphql.github.io/")),
+  licenses := licenses.value,
+  startYear := Some(2025),
+  organizationHomepage := Some(url("https://github.com/sangria-graphql")),
+  developers :=
+    Developer("stkeky", "Stefan Ristanović", "", url("https://github.com/stkeky")) ::
+      Developer("yanns", "Yann Simon", "", url("https://github.com/yanns")) ::
+      Nil,
+  scmInfo := Some(
+    ScmInfo(
+      browseUrl = url("https://github.com/sangria-graphql/sangria"),
+      connection = "scm:git:git@github.com:sangria-graphql/sangria.git"
+    ))
+)
 lazy val root = (project in file("."))
   .settings(
     name := "sangria-pekko-streams",
